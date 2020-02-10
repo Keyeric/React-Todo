@@ -38,6 +38,15 @@ class App extends Component {
     };
 }
 
+clearCompleted = (e)=>{
+    e.preventDefault();
+    this.setState({
+        choreList: this.state.choreList.filter(
+           item => !item.completed 
+        )
+    });
+}
+
 toggleItem = clickedId => {
 
     const newChoreList = this.state.choreList.map(item => {
@@ -79,6 +88,7 @@ toggleItem = clickedId => {
             <TodoList
             chores={this.state.choreList}
             toggleItem={this.toggleItem}
+            clearCompleted={this.clearCompleted}
             />
 
         </div>

@@ -1,0 +1,26 @@
+.item.completed {
+  background-color: black;
+  color: red;
+  text-decoration: line-through;
+}
+.item{
+    text-align: center;
+}
+.list-of-junk{
+    background-color: red;
+    padding-bottom: 20%; 
+    padding-top:10%;
+    border: 1rem solid black;
+}
+.clear-btn{
+    margin-left: 37.5%;
+    color: white;
+    background: darkred;
+    border-color: grey;
+}
+body{
+    background-color: grey;
+}
+h1{
+    color: white;
+}
